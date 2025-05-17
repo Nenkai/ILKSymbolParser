@@ -16,7 +16,7 @@ namespace ILKSymbolParser
             using var sw = new StreamWriter("syms.txt");
 
             var db = IncrementalLinkerDatabase.Open(args[0]);
-            Console.WriteLine($"{db.Image.ST.HT.Entries} entries");
+            Console.WriteLine($"{db.Image.ST.HT.Entries.Count} entries");
 
             foreach (var entry in db.Image.ST.HT.Entries.OrderBy(e => e.Value))
             {
