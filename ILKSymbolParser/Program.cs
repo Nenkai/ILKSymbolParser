@@ -20,7 +20,7 @@ namespace ILKSymbolParser
 
             foreach (var entry in db.Image.ST.HT.Entries.OrderBy(e => e.Value))
             {
-                sw.WriteLine($"0x{db.Image.IMAGE_OPTIONAL_HEADER.ImageBase + (uint)entry.Value:X8} - {entry.Key}");
+                sw.WriteLine($"{db.Image.IMAGE_OPTIONAL_HEADER.ImageBase + (uint)entry.Value:X}\t{entry.Key}");
             }
 
             Console.WriteLine("saved as syms.txt");
