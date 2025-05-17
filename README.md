@@ -6,4 +6,4 @@ This will only work with 32bit .ilk files from MSVC linker version 14.0.24125. T
 
 ---
 
-This project was only made to work across a certain game I had to extract information from.
+This project was only made to work against a certain game I had to extract information from. It will need adjusting to support any other version (or 64 bit).
